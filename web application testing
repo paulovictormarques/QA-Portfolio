@@ -1,0 +1,92 @@
+# QA Portfolio – Paulo Victor Marques
+
+## 📋 Project Overview
+This project demonstrates **Manual QA Testing** skills using the [SauceDemo](https://saucedemo.com) web application.
+
+*   **Scope:** Login functionality, Product Inventory, Cart Operations, and Checkout Process.
+*   **Testing Types:** Manual, Functional, and Exploratory Testing.
+*   **Environment:** Google Chrome (Desktop).
+
+---
+
+## 📑 Test Plan
+**Objective:** Validate core user flows and identify functional defects.
+
+### Approach
+- Execution of predefined test cases.
+- Exploratory testing to uncover edge-case scenarios.
+- Precise bug documentation including steps, severity, and priority.
+
+---
+
+## 🧪 Test Cases
+
+
+| ID | Test Scenario | Result |
+| :--- | :--- | :--- |
+| **TC01** | Valid Login | ✅ PASS |
+| **TC02** | Invalid Login (Wrong Password) | ✅ PASS |
+| **TC03** | Add Product to Cart | ✅ PASS |
+| **TC04** | Remove Product from Cart | ✅ PASS |
+| **TC05** | Immediate Cart Icon Update | ❌ FAIL |
+| **TC06** | Standard Checkout Process | ✅ PASS |
+| **TC07** | Empty Cart Checkout | ❌ FAIL |
+| **TC08** | Checkout Form Input Validation | ✅ PASS |
+| **TC09** | Navigation back to products (Continue Shopping) | ✅ PASS |
+| **TC10** | Multiple Items displayed in Cart | ✅ PASS |
+
+---
+
+## 🐛 Bug Reports
+
+### 🚨 Bug 02 – Checkout Without Items
+- **Severity:** `High` | **Priority:** `High`
+- **Steps:** Access cart without items > Click "Checkout".
+- **Expected:** System should prevent checkout or show a warning message.
+- **Actual:** User proceeds to the checkout form even with an empty cart.
+
+### 🟡 Bug 01 – Cart Icon Delay Update
+- **Severity:** `Medium` | **Priority:** `Medium`
+- **Steps:** Login > Add product to cart.
+- **Expected:** Cart icon updates immediately.
+- **Actual:** There is a noticeable delay before the icon reflects the change.
+
+### 🟡 Bug 04 – Checkout Button Delay
+- **Severity:** `Medium` | **Priority:** `Medium`
+- **Steps:** Add item > Click "Checkout".
+- **Expected:** Immediate navigation to the next page.
+- **Actual:** Noticeable lag between the click and the page load.
+
+### 🔵 Bug 03 – Unclear Error Message
+- **Severity:** `Low` | **Priority:** `Medium`
+- **Steps:** Enter wrong login credentials.
+- **Expected:** Clear and helpful error message.
+- **Actual:** Generic message with low clarity for the user.
+
+### 🔵 Bug 05 – UX Inconsistency in Buttons
+- **Severity:** `Low` | **Priority:** `Low`
+- **Issue:** Buttons across different pages have inconsistent labels and styles.
+
+---
+
+## 🔍 QA Analysis & Improvements
+
+### Key Observations:
+1. **UI Feedback:** Delays in interface updates impact the user experience.
+2. **Business Logic:** Weak validation in the checkout flow allows for invalid transactions (empty carts).
+3. **UX Elements:** Inconsistent styling across the application.
+
+### Suggested Improvements:
+- [ ] Implement real-time UI updates for better feedback.
+- [ ] Add validation to block checkout attempts with an empty cart.
+- [ ] Enhance error message clarity to guide the user.
+- [ ] Standardize UI components (buttons, fonts, and colors).
+
+---
+
+## 🎓 Final Notes
+This project showcases proficiency in:
+*   **Test Case Creation**
+*   **Bug Identification and Reporting**
+*   **Analytical Thinking**
+*   **Attention to Detail**
